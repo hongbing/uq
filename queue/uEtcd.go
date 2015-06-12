@@ -95,6 +95,9 @@ func (u *UnitedQueue) watchRun(succChan, stopChan chan bool) {
 	// log.Printf("watchRun stoped.")
 }
 
+/**
+watch etcd中对uq数据的变更
+*/
 func (u *UnitedQueue) scanRun() {
 	// log.Printf("etcd scanRun start...")
 
