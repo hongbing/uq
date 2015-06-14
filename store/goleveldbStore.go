@@ -13,7 +13,10 @@ type LevelStore struct {
 	db   *leveldb.DB
 }
 
-// NewLevelStore returns a new LevelStore
+/**使用snappy压缩，snappy压缩的特点是压缩与解压缩速度快，压缩比与其他
+压缩算法相比并不占优。使用场景特别针对需要网络传输的临时性文件，不适用
+于永久性存储的文件。
+*/
 func NewLevelStore(path string) (*LevelStore, error) {
 	option := &opt.Options{Compression: opt.SnappyCompression}
 	db, err := leveldb.OpenFile(path, option)
