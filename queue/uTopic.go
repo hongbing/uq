@@ -108,7 +108,11 @@ func (t *topic) genTopicStore() *topicStore {
 	return ts
 }
 
+/**
+topicstore存储在db中，topicstore
+*/
 func (t *topic) exportTopic() error {
+
 	topicStoreValue := t.genTopicStore()
 
 	buffer := bytes.NewBuffer(nil)
@@ -195,6 +199,9 @@ func (t *topic) loadLine(lineName string, lineStoreValue lineStore) (*line, erro
 	return l, nil
 }
 
+/**
+end值表示line已经被消费且得到confirm的消息的位置
+*/
 func (t *topic) getEnd() uint64 {
 	var end uint64
 	if len(t.lines) == 0 {
@@ -216,6 +223,9 @@ func (t *topic) getEnd() uint64 {
 	return end
 }
 
+/**
+将存储引擎中已经消费且得到confirm的消息清理掉，避免存储容量的无限增大
+*/
 func (t *topic) clean() (quit bool) {
 	quit = false
 
@@ -298,7 +308,7 @@ func (t *topic) backgroundClean() {
 func (t *topic) start() {
 	// log.Printf("topic[%s] is starting...", t.name)
 	/**
-	执行后台清理和备份操作
+	执行后台清理和备份操作，清理和备份时间分别是20s，和10s
 	*/
 	go t.backgroundClean()
 }

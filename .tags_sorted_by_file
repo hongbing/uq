@@ -359,7 +359,7 @@ store	store/goleveldbStore.go	/^package store$/;"	p
 TestCloseLevel	store/goleveldbStore_test.go	/^func TestCloseLevel(t *testing.T) {$/;"	f
 TestDelLevel	store/goleveldbStore_test.go	/^func TestDelLevel(t *testing.T) {$/;"	f
 TestGetLevel	store/goleveldbStore_test.go	/^func TestGetLevel(t *testing.T) {$/;"	f
-TestNewLevelStore	store/goleveldbStore_test.go	/^func TestNewLevelStore(t *testing.T) {$/;"	f
+TestNew	store/goleveldbStore_test.go	/^func TestNew(t *testing.T) {$/;"	f
 TestSetLevel	store/goleveldbStore_test.go	/^func TestSetLevel(t *testing.T) {$/;"	f
 dbPath	store/goleveldbStore_test.go	/^	ldb    Storage$/;"	v
 init	store/goleveldbStore_test.go	/^func init() {$/;"	f

@@ -16,13 +16,13 @@ func init() {
 	dbPath = os.TempDir() + "/uq.store.test.db"
 }
 
-func TestNewLevelStore(t *testing.T) {
+func TestNew(t *testing.T) {
 	Convey("Test New Level Store", t, func() {
-		ldb, err = NewLevelStore(dbPath)
+		ldb, err = New(dbPath)
 		So(err, ShouldBeNil)
 		So(ldb, ShouldNotBeNil)
 
-		ldb2, err2 := NewLevelStore("/path_not_existed")
+		ldb2, err2 := New("/path_not_existed")
 		So(err2, ShouldNotBeNil)
 		So(ldb2, ShouldBeNil)
 	})

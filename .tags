@@ -140,9 +140,9 @@ TestMcPush	entry/mcEntry_test.go	/^func TestMcPush(t *testing.T) {$/;"	f
 TestMultiConfirm	queue/uQueue_test.go	/^func TestMultiConfirm(t *testing.T) {$/;"	f
 TestMultiPop	queue/uQueue_test.go	/^func TestMultiPop(t *testing.T) {$/;"	f
 TestMultiPush	queue/uQueue_test.go	/^func TestMultiPush(t *testing.T) {$/;"	f
+TestNew	store/goleveldbStore_test.go	/^func TestNew(t *testing.T) {$/;"	f
 TestNewAdmin	admin/uAdmin_test.go	/^func TestNewAdmin(t *testing.T) {$/;"	f
 TestNewHTTPEntry	entry/httpEntry_test.go	/^func TestNewHTTPEntry(t *testing.T) {$/;"	f
-TestNewLevelStore	store/goleveldbStore_test.go	/^func TestNewLevelStore(t *testing.T) {$/;"	f
 TestNewMcEntry	entry/mcEntry_test.go	/^func TestNewMcEntry(t *testing.T) {$/;"	f
 TestNewMemStore	store/memStore_test.go	/^func TestNewMemStore(t *testing.T) {$/;"	f
 TestNewRedisEntry	entry/redisEntry_test.go	/^func TestNewRedisEntry(t *testing.T) {$/;"	f

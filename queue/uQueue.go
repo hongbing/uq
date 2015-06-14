@@ -334,7 +334,7 @@ func (u *UnitedQueue) createTopic(name string, fromEtcd bool) error {
 }
 
 /**
-根据key的结构，判断是存储topic还是line
+根据key的结构，判断是存储topic还是line,fromEtcd表示是通过Etcd执行的操作，还是通过客户端接口
 */
 func (u *UnitedQueue) create(key, rec string, fromEtcd bool) error {
 	key = strings.TrimPrefix(key, "/")
@@ -374,6 +374,7 @@ func (u *UnitedQueue) create(key, rec string, fromEtcd bool) error {
 		u.topicsLock.RLock()
 		t, ok := u.topics[topicName]
 		u.topicsLock.RUnlock()
+		// topic不存在，无法创建line
 		if !ok {
 			return utils.NewError(
 				utils.ErrTopicNotExisted,

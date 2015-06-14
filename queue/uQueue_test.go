@@ -21,7 +21,7 @@ var (
 
 func TestNewUnitedQueue(t *testing.T) {
 	Convey("Test New Uq", t, func() {
-		ldb, err = store.NewLevelStore(dbPath)
+		ldb, err = store.New(dbPath)
 		So(ldb, ShouldNotBeNil)
 		So(err, ShouldBeNil)
 
@@ -198,7 +198,7 @@ func TestClose(t *testing.T) {
 
 func TestLoad(t *testing.T) {
 	Convey("Test Load Queue", t, func() {
-		ldb, err = store.NewLevelStore(dbPath)
+		ldb, err = store.New(dbPath)
 		So(ldb, ShouldNotBeNil)
 		So(err, ShouldBeNil)
 
