@@ -200,7 +200,7 @@ func (t *topic) loadLine(lineName string, lineStoreValue lineStore) (*line, erro
 }
 
 /**
-end值表示line已经被消费且得到confirm的消息的位置
+end值表示所有line已经被消费且得到confirm的消息最小的位置
 */
 func (t *topic) getEnd() uint64 {
 	var end uint64

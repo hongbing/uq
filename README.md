@@ -1,4 +1,14 @@
 ## UQ
+hongbing：
+uq的模式跟trigger，或者说kafka类似。这里的line与kafka中的consumerGroup是实现的是同样的功能，即支持
+多个消费放能够消费同一份数据的能力。
+客户端支持的协议比较丰富，包括http，redis，memcache三种。同时，存储的引擎也支持内存存储和持久化存储。
+另外，支持消息的确认。
+为了避免存储数据的无限增长，会定时清理topic中已经被读取并且得到confirm的消息。
+trigger中虽然有对消息的确认机制，但是在清理消息数据时，并不是依据消息是否被读过来做清理，而是根据磁盘
+存储容量来定，当达到磁盘容量（100多G）的80%时将对数据做清理（对于实时流消息来说，如果你的消息在最前面的
+100G数据中，认为你已经消费过了，即使没消费对消费方来说也不太重要了）。
+
 
 [![Build Status](https://travis-ci.org/buaazp/uq.svg)](https://travis-ci.org/buaazp/uq) [![Coverage Status](https://coveralls.io/repos/buaazp/uq/badge.svg)](https://coveralls.io/r/buaazp/uq)
 
