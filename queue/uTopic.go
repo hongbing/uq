@@ -297,6 +297,9 @@ func (t *topic) backgroundClean() {
 
 func (t *topic) start() {
 	// log.Printf("topic[%s] is starting...", t.name)
+	/**
+	执行后台清理和备份操作
+	*/
 	go t.backgroundClean()
 }
 

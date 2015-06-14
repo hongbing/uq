@@ -32,6 +32,9 @@ func (u *UnitedQueue) nodeRemove(node *etcd.Node) error {
 	return u.remove(name, true)
 }
 
+/**
+从etcd中pull出register的topics，key为etcdkey/topics
+*/
 func (u *UnitedQueue) pullTopics() error {
 	// log.Printf("etcd pull topics start...")
 
@@ -95,6 +98,9 @@ func (u *UnitedQueue) watchRun(succChan, stopChan chan bool) {
 	// log.Printf("watchRun stoped.")
 }
 
+/**
+监控etcd的运行，对topics添加watch事件。
+*/
 func (u *UnitedQueue) scanRun() {
 	// log.Printf("etcd scanRun start...")
 
@@ -129,6 +135,9 @@ func (u *UnitedQueue) scanRun() {
 	// log.Printf("scanRun stoped.")
 }
 
+/**
+在etcd中注册uq的server，并且设置TTL
+*/
 func (u *UnitedQueue) register() error {
 	// log.Printf("etcd register self...")
 
@@ -182,6 +191,9 @@ func (u *UnitedQueue) etcdRun() {
 		select {
 		case <-ticker.C:
 			// log.Printf("etcdRun ticked.")
+			/**
+			为什么要保持一直注册
+			*/
 			u.register()
 		case <-u.etcdStop:
 			// log.Printf("etcdRun stoping...")

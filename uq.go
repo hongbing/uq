@@ -31,6 +31,10 @@ var (
 	cluster   string
 )
 
+/**
+前端支持redis/mc/http三种协议
+后端存储支持goleveldb/memdb两种存储引擎，memdb表示内存存储
+*/
 func init() {
 	flag.StringVar(&ip, "ip", "127.0.0.1", "self ip/host address")
 	flag.StringVar(&host, "host", "0.0.0.0", "listen ip")
@@ -40,7 +44,9 @@ func init() {
 	flag.StringVar(&db, "db", "goleveldb", "backend storage type [goleveldb/memdb]")
 	flag.StringVar(&dir, "dir", "./data", "backend storage path")
 	flag.StringVar(&logFile, "log", "", "uq log path")
+	//多个etcd server应该用comma分隔
 	flag.StringVar(&etcd, "etcd", "", "etcd service location")
+	// cluster即为etcd的key
 	flag.StringVar(&cluster, "cluster", "uq", "cluster name in etcd")
 }
 

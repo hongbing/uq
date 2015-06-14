@@ -212,6 +212,11 @@ func (u *UnitedQueue) loadTopic(topicName string, topicStoreValue topicStore) (*
 	}
 	t.lines = lines
 
+	/**
+	在t.loadLine中，registerLine使用的是etcdClient.set方法，而registerTopic中使用
+	的是etcdClient的createDir。然而前者的key为：[etcdkey]/topics/[topic]/[line],后者
+	目录为etcdkey/topics/[topic]。
+	*/
 	u.registerTopic(t.name)
 
 	t.start()
@@ -318,6 +323,9 @@ func (u *UnitedQueue) createTopic(name string, fromEtcd bool) error {
 	return nil
 }
 
+/**
+根据key的结构，判断是存储topic还是line
+*/
 func (u *UnitedQueue) create(key, rec string, fromEtcd bool) error {
 	key = strings.TrimPrefix(key, "/")
 	key = strings.TrimSuffix(key, "/")

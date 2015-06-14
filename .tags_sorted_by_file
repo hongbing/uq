@@ -1,0 +1,532 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+Administrator	admin/admin.go	/^type Administrator interface {$/;"	t
+admin	admin/admin.go	/^package admin$/;"	p
+ListenAndServe	admin/uAdmin.go	/^func (s *UnitedAdmin) ListenAndServe() error {$/;"	f
+NewUnitedAdmin	admin/uAdmin.go	/^func NewUnitedAdmin(host string, port int, messageQueue queue.MessageQueue) (*UnitedAdmin, error) {$/;"	f
+ServeHTTP	admin/uAdmin.go	/^func (s *UnitedAdmin) ServeHTTP(w http.ResponseWriter, req *http.Request) {$/;"	f
+Stop	admin/uAdmin.go	/^func (s *UnitedAdmin) Stop() {$/;"	f
+UnitedAdmin	admin/uAdmin.go	/^type UnitedAdmin struct {$/;"	t
+addHandler	admin/uAdmin.go	/^func (s *UnitedAdmin) addHandler(w http.ResponseWriter, req *http.Request, key string) {$/;"	f
+admin	admin/uAdmin.go	/^package admin$/;"	p
+adminHandler	admin/uAdmin.go	/^func (s *UnitedAdmin) adminHandler(w http.ResponseWriter, req *http.Request, key string) {$/;"	f
+adminPrefixV1	admin/uAdmin.go	/^	queuePrefixV1      = "\/v1\/queues"$/;"	c
+delHandler	admin/uAdmin.go	/^func (s *UnitedAdmin) delHandler(w http.ResponseWriter, req *http.Request, key string) {$/;"	f
+emptyHandler	admin/uAdmin.go	/^func (s *UnitedAdmin) emptyHandler(w http.ResponseWriter, req *http.Request, key string) {$/;"	f
+popHandler	admin/uAdmin.go	/^func (s *UnitedAdmin) popHandler(w http.ResponseWriter, req *http.Request, key string) {$/;"	f
+pprofPrefixCmd	admin/uAdmin.go	/^	adminPrefixV1      = "\/v1\/admin"$/;"	c
+pprofPrefixIndex	admin/uAdmin.go	/^	pprofPrefixSymbol  = "\/debug\/pprof\/symbol"$/;"	c
+pprofPrefixProfile	admin/uAdmin.go	/^	pprofPrefixCmd     = "\/debug\/pprof\/cmdline"$/;"	c
+pprofPrefixSymbol	admin/uAdmin.go	/^	pprofPrefixProfile = "\/debug\/pprof\/profile"$/;"	c
+pushHandler	admin/uAdmin.go	/^func (s *UnitedAdmin) pushHandler(w http.ResponseWriter, req *http.Request, key string) {$/;"	f
+queueHandler	admin/uAdmin.go	/^func (s *UnitedAdmin) queueHandler(w http.ResponseWriter, req *http.Request, key string) {$/;"	f
+queuePrefixV1	admin/uAdmin.go	/^const ($/;"	c
+rmHandler	admin/uAdmin.go	/^func (s *UnitedAdmin) rmHandler(w http.ResponseWriter, req *http.Request, key string) {$/;"	f
+statHandler	admin/uAdmin.go	/^func (s *UnitedAdmin) statHandler(w http.ResponseWriter, req *http.Request, key string) {$/;"	f
+writeErrorHTTP	admin/uAdmin.go	/^func writeErrorHTTP(w http.ResponseWriter, err error) {$/;"	f
+TestAdminAdd	admin/uAdmin_test.go	/^func TestAdminAdd(t *testing.T) {$/;"	f
+TestAdminConfirm	admin/uAdmin_test.go	/^func TestAdminConfirm(t *testing.T) {$/;"	f
+TestAdminEmpty	admin/uAdmin_test.go	/^func TestAdminEmpty(t *testing.T) {$/;"	f
+TestAdminPop	admin/uAdmin_test.go	/^func TestAdminPop(t *testing.T) {$/;"	f
+TestAdminPush	admin/uAdmin_test.go	/^func TestAdminPush(t *testing.T) {$/;"	f
+TestAdminRemove	admin/uAdmin_test.go	/^func TestAdminRemove(t *testing.T) {$/;"	f
+TestAdminStat	admin/uAdmin_test.go	/^func TestAdminStat(t *testing.T) {$/;"	f
+TestCloseAdmin	admin/uAdmin_test.go	/^func TestCloseAdmin(t *testing.T) {$/;"	f
+TestNewAdmin	admin/uAdmin_test.go	/^func TestNewAdmin(t *testing.T) {$/;"	f
+admin	admin/uAdmin_test.go	/^package admin$/;"	p
+adminServer	admin/uAdmin_test.go	/^	messageQueue queue.MessageQueue$/;"	v
+client	admin/uAdmin_test.go	/^	adminServer  Administrator$/;"	v
+init	admin/uAdmin_test.go	/^func init() {$/;"	f
+messageQueue	admin/uAdmin_test.go	/^	storage      store.Storage$/;"	v
+storage	admin/uAdmin_test.go	/^var ($/;"	v
+Entrance	entry/entry.go	/^type Entrance interface {$/;"	t
+MaxBodyLength	entry/entry.go	/^	MaxKeyLength int = 512$/;"	c
+MaxKeyLength	entry/entry.go	/^const ($/;"	c
+entry	entry/entry.go	/^package entry$/;"	p
+HTTPEntry	entry/httpEntry.go	/^type HTTPEntry struct {$/;"	t
+ListenAndServe	entry/httpEntry.go	/^func (h *HTTPEntry) ListenAndServe() error {$/;"	f
+NewHTTPEntry	entry/httpEntry.go	/^func NewHTTPEntry(host string, port int, messageQueue queue.MessageQueue) (*HTTPEntry, error) {$/;"	f
+ServeHTTP	entry/httpEntry.go	/^func (h *HTTPEntry) ServeHTTP(w http.ResponseWriter, req *http.Request) {$/;"	f
+Stop	entry/httpEntry.go	/^func (h *HTTPEntry) Stop() {$/;"	f
+addHandler	entry/httpEntry.go	/^func (h *HTTPEntry) addHandler(w http.ResponseWriter, req *http.Request, key string) {$/;"	f
+delHandler	entry/httpEntry.go	/^func (h *HTTPEntry) delHandler(w http.ResponseWriter, req *http.Request, key string) {$/;"	f
+entry	entry/httpEntry.go	/^package entry$/;"	p
+popHandler	entry/httpEntry.go	/^func (h *HTTPEntry) popHandler(w http.ResponseWriter, req *http.Request, key string) {$/;"	f
+pushHandler	entry/httpEntry.go	/^func (h *HTTPEntry) pushHandler(w http.ResponseWriter, req *http.Request, key string) {$/;"	f
+queueHandler	entry/httpEntry.go	/^func (h *HTTPEntry) queueHandler(w http.ResponseWriter, req *http.Request, key string) {$/;"	f
+queuePrefixV1	entry/httpEntry.go	/^const ($/;"	c
+writeErrorHTTP	entry/httpEntry.go	/^func writeErrorHTTP(w http.ResponseWriter, err error) {$/;"	f
+TestCloseHTTPEntry	entry/httpEntry_test.go	/^func TestCloseHTTPEntry(t *testing.T) {$/;"	f
+TestHttpAdd	entry/httpEntry_test.go	/^func TestHttpAdd(t *testing.T) {$/;"	f
+TestHttpConfirm	entry/httpEntry_test.go	/^func TestHttpConfirm(t *testing.T) {$/;"	f
+TestHttpPop	entry/httpEntry_test.go	/^func TestHttpPop(t *testing.T) {$/;"	f
+TestHttpPush	entry/httpEntry_test.go	/^func TestHttpPush(t *testing.T) {$/;"	f
+TestNewHTTPEntry	entry/httpEntry_test.go	/^func TestNewHTTPEntry(t *testing.T) {$/;"	f
+client	entry/httpEntry_test.go	/^	entrance     Entrance$/;"	v
+entrance	entry/httpEntry_test.go	/^	messageQueue queue.MessageQueue$/;"	v
+entry	entry/httpEntry_test.go	/^package entry$/;"	p
+init	entry/httpEntry_test.go	/^func init() {$/;"	f
+messageQueue	entry/httpEntry_test.go	/^	storage      store.Storage$/;"	v
+storage	entry/httpEntry_test.go	/^var ($/;"	v
+ListenAndServe	entry/mcEntry.go	/^func (m *McEntry) ListenAndServe() error {$/;"	f
+McEntry	entry/mcEntry.go	/^type McEntry struct {$/;"	t
+NewMcEntry	entry/mcEntry.go	/^func NewMcEntry(host string, port int, messageQueue queue.MessageQueue) (*McEntry, error) {$/;"	f
+Stop	entry/mcEntry.go	/^func (m *McEntry) Stop() {$/;"	f
+entry	entry/mcEntry.go	/^package entry$/;"	p
+handlerConn	entry/mcEntry.go	/^func (m *McEntry) handlerConn(conn net.Conn) {$/;"	f
+item	entry/mcEntry.go	/^type item struct {$/;"	t
+process	entry/mcEntry.go	/^func (m *McEntry) process(req *request) (resp *response, quit bool) {$/;"	f
+read	entry/mcEntry.go	/^func (m *McEntry) read(b *bufio.Reader) (*request, error) {$/;"	f
+request	entry/mcEntry.go	/^type request struct {$/;"	t
+writeErrorMc	entry/mcEntry.go	/^func writeErrorMc(resp *response, err error) {$/;"	f
+TestCloseMcEntry	entry/mcEntry_test.go	/^func TestCloseMcEntry(t *testing.T) {$/;"	f
+TestMcAdd	entry/mcEntry_test.go	/^func TestMcAdd(t *testing.T) {$/;"	f
+TestMcConfirm	entry/mcEntry_test.go	/^func TestMcConfirm(t *testing.T) {$/;"	f
+TestMcPop	entry/mcEntry_test.go	/^func TestMcPop(t *testing.T) {$/;"	f
+TestMcPush	entry/mcEntry_test.go	/^func TestMcPush(t *testing.T) {$/;"	f
+TestNewMcEntry	entry/mcEntry_test.go	/^func TestNewMcEntry(t *testing.T) {$/;"	f
+entry	entry/mcEntry_test.go	/^package entry$/;"	p
+init	entry/mcEntry_test.go	/^func init() {$/;"	f
+mc	entry/mcEntry_test.go	/^var mc *memcache.Client$/;"	v
+Write	entry/mcResponse.go	/^func (resp *response) Write(w io.Writer) error {$/;"	f
+entry	entry/mcResponse.go	/^package entry$/;"	p
+response	entry/mcResponse.go	/^type response struct {$/;"	t
+writeFull	entry/mcResponse.go	/^func writeFull(w io.Writer, buf []byte) error {$/;"	f
+String	entry/redisCommand.go	/^func (cmd *command) String() string {$/;"	f
+argAtIndex	entry/redisCommand.go	/^func (cmd *command) argAtIndex(i int) (arg []byte, err error) {$/;"	f
+bytes	entry/redisCommand.go	/^func (cmd *command) bytes() []byte {$/;"	f
+command	entry/redisCommand.go	/^type command struct {$/;"	t
+entry	entry/redisCommand.go	/^package entry$/;"	p
+floatAtIndex	entry/redisCommand.go	/^func (cmd *command) floatAtIndex(i int) (n float64, err error) {$/;"	f
+getAttribute	entry/redisCommand.go	/^func (cmd *command) getAttribute(name string) interface{} {$/;"	f
+int64AtIndex	entry/redisCommand.go	/^func (cmd *command) int64AtIndex(i int) (n int64, err error) {$/;"	f
+intAtIndex	entry/redisCommand.go	/^func (cmd *command) intAtIndex(i int) (n int, err error) {$/;"	f
+length	entry/redisCommand.go	/^func (cmd *command) length() int {$/;"	f
+name	entry/redisCommand.go	/^func (cmd *command) name() string {$/;"	f
+newCommand	entry/redisCommand.go	/^func newCommand(args ...[]byte) (cmd *command) {$/;"	f
+parseCommand	entry/redisCommand.go	/^func parseCommand(buf *bytes.Buffer) (*command, error) {$/;"	f
+setAttribute	entry/redisCommand.go	/^func (cmd *command) setAttribute(name string, v interface{}) {$/;"	f
+stringArgs	entry/redisCommand.go	/^func (cmd *command) stringArgs() []string {$/;"	f
+stringAtIndex	entry/redisCommand.go	/^func (cmd *command) stringAtIndex(i int) string {$/;"	f
+uint64AtIndex	entry/redisCommand.go	/^func (cmd *command) uint64AtIndex(i int) (n uint64, err error) {$/;"	f
+CR	entry/redisEntry.go	/^const ($/;"	c
+CRLF	entry/redisEntry.go	/^	LF = '\\n'$/;"	c
+LF	entry/redisEntry.go	/^	CR = '\\r'$/;"	c
+ListenAndServe	entry/redisEntry.go	/^func (r *RedisEntry) ListenAndServe() error {$/;"	f
+NewRedisEntry	entry/redisEntry.go	/^func NewRedisEntry(host string, port int, messageQueue queue.MessageQueue) (*RedisEntry, error) {$/;"	f
+RedisEntry	entry/redisEntry.go	/^type RedisEntry struct {$/;"	t
+Stop	entry/redisEntry.go	/^func (r *RedisEntry) Stop() {$/;"	f
+cElapsed	entry/redisEntry.go	/^	cSession = "session"$/;"	c
+cSession	entry/redisEntry.go	/^	CRLF     = "\\r\\n"$/;"	c
+commandHandler	entry/redisEntry.go	/^func (r *RedisEntry) commandHandler(ss *session, cmd *command) (rep *reply) {$/;"	f
+entry	entry/redisEntry.go	/^package entry$/;"	p
+handlerConn	entry/redisEntry.go	/^func (r *RedisEntry) handlerConn(ss *session) {$/;"	f
+onUndefined	entry/redisEntry.go	/^func (r *RedisEntry) onUndefined(ss *session, cmd *command) (rep *reply) {$/;"	f
+process	entry/redisEntry.go	/^func (r *RedisEntry) process(ss *session, cmd *command) (rep *reply) {$/;"	f
+TestCloseRedisEntry	entry/redisEntry_test.go	/^func TestCloseRedisEntry(t *testing.T) {$/;"	f
+TestNewRedisEntry	entry/redisEntry_test.go	/^func TestNewRedisEntry(t *testing.T) {$/;"	f
+TestRedisAdd	entry/redisEntry_test.go	/^func TestRedisAdd(t *testing.T) {$/;"	f
+TestRedisConfirm	entry/redisEntry_test.go	/^func TestRedisConfirm(t *testing.T) {$/;"	f
+TestRedisPop	entry/redisEntry_test.go	/^func TestRedisPop(t *testing.T) {$/;"	f
+TestRedisPush	entry/redisEntry_test.go	/^func TestRedisPush(t *testing.T) {$/;"	f
+conn	entry/redisEntry_test.go	/^var conn redis.Conn$/;"	v
+entry	entry/redisEntry_test.go	/^package entry$/;"	p
+entry	entry/redisQueue.go	/^package entry$/;"	p
+onInfo	entry/redisQueue.go	/^func (r *RedisEntry) onInfo(cmd *command) *reply {$/;"	f
+onQadd	entry/redisQueue.go	/^func (r *RedisEntry) onQadd(cmd *command) *reply {$/;"	f
+onQdel	entry/redisQueue.go	/^func (r *RedisEntry) onQdel(cmd *command) *reply {$/;"	f
+onQempty	entry/redisQueue.go	/^func (r *RedisEntry) onQempty(cmd *command) *reply {$/;"	f
+onQmdel	entry/redisQueue.go	/^func (r *RedisEntry) onQmdel(cmd *command) *reply {$/;"	f
+onQmpop	entry/redisQueue.go	/^func (r *RedisEntry) onQmpop(cmd *command) *reply {$/;"	f
+onQmpush	entry/redisQueue.go	/^func (r *RedisEntry) onQmpush(cmd *command) *reply {$/;"	f
+onQpop	entry/redisQueue.go	/^func (r *RedisEntry) onQpop(cmd *command) *reply {$/;"	f
+onQpush	entry/redisQueue.go	/^func (r *RedisEntry) onQpush(cmd *command) *reply {$/;"	f
+String	entry/redisReply.go	/^func (r *reply) String() string {$/;"	f
+bulkReply	entry/redisReply.go	/^func bulkReply(bulk interface{}) (r *reply) {$/;"	f
+entry	entry/redisReply.go	/^package entry$/;"	p
+errorReply	entry/redisReply.go	/^func errorReply(err error) (r *reply) {$/;"	f
+integerReply	entry/redisReply.go	/^func integerReply(i int) (r *reply) {$/;"	f
+multiBulksReply	entry/redisReply.go	/^func multiBulksReply(bulks []interface{}) (r *reply) {$/;"	f
+reply	entry/redisReply.go	/^type reply struct {$/;"	t
+replyType	entry/redisReply.go	/^type replyType int$/;"	t
+replyTypeBulk	entry/redisReply.go	/^	replyTypeInteger$/;"	c
+replyTypeDesc	entry/redisReply.go	/^var replyTypeDesc = map[replyType]string{$/;"	v
+replyTypeError	entry/redisReply.go	/^	replyTypeStatus replyType = iota$/;"	c
+replyTypeInteger	entry/redisReply.go	/^	replyTypeError$/;"	c
+replyTypeMultiBulks	entry/redisReply.go	/^	replyTypeBulk$/;"	c
+replyTypeStatus	entry/redisReply.go	/^const ($/;"	c
+statusReply	entry/redisReply.go	/^func statusReply(status string) (r *reply) {$/;"	f
+Read	entry/redisSession.go	/^func (s *session) Read(p []byte) (n int, err error) {$/;"	f
+String	entry/redisSession.go	/^func (s *session) String() string {$/;"	f
+entry	entry/redisSession.go	/^package entry$/;"	p
+getAttribute	entry/redisSession.go	/^func (s *session) getAttribute(name string) interface{} {$/;"	f
+newSession	entry/redisSession.go	/^func newSession(conn net.Conn) (s *session) {$/;"	f
+peekByte	entry/redisSession.go	/^func (s *session) peekByte() (c byte, err error) {$/;"	f
+readByte	entry/redisSession.go	/^func (s *session) readByte() (c byte, err error) {$/;"	f
+readCommand	entry/redisSession.go	/^func (s *session) readCommand() (cmd *command, err error) {$/;"	f
+readInt	entry/redisSession.go	/^func (s *session) readInt() (i int, err error) {$/;"	f
+readInt64	entry/redisSession.go	/^func (s *session) readInt64() (i int64, err error) {$/;"	f
+readLine	entry/redisSession.go	/^func (s *session) readLine() (line []byte, err error) {$/;"	f
+readRDB	entry/redisSession.go	/^func (s *session) readRDB(w io.Writer) (err error) {$/;"	f
+readReply	entry/redisSession.go	/^func (s *session) readReply() (rep *reply, err error) {$/;"	f
+readString	entry/redisSession.go	/^func (s *session) readString() (str string, err error) {$/;"	f
+replyBulk	entry/redisSession.go	/^func (s *session) replyBulk(bulk interface{}) (err error) {$/;"	f
+replyError	entry/redisSession.go	/^func (s *session) replyError(errmsg string) (err error) {$/;"	f
+replyInteger	entry/redisSession.go	/^func (s *session) replyInteger(i int) (err error) {$/;"	f
+replyMultiBulks	entry/redisSession.go	/^func (s *session) replyMultiBulks(bulks []interface{}) (err error) {$/;"	f
+replyStatus	entry/redisSession.go	/^func (s *session) replyStatus(status string) (err error) {$/;"	f
+session	entry/redisSession.go	/^type session struct {$/;"	t
+setAttribute	entry/redisSession.go	/^func (s *session) setAttribute(name string, v interface{}) {$/;"	f
+skipByte	entry/redisSession.go	/^func (s *session) skipByte(c byte) (err error) {$/;"	f
+skipBytes	entry/redisSession.go	/^func (s *session) skipBytes(bs []byte) (err error) {$/;"	f
+writeCommand	entry/redisSession.go	/^func (s *session) writeCommand(cmd *command) (err error) {$/;"	f
+writeReply	entry/redisSession.go	/^func (s *session) writeReply(rep *reply) (err error) {$/;"	f
+cmdrules	entry/redisValidate.go	/^var cmdrules = map[string][]interface{}{$/;"	v
+entry	entry/redisValidate.go	/^package entry$/;"	p
+errBadCommand	entry/redisValidate.go	/^var ($/;"	v
+errWrongArgumentCount	entry/redisValidate.go	/^	errBadCommand         = errors.New("bad command")$/;"	v
+errWrongCommandKey	entry/redisValidate.go	/^	errWrongArgumentCount = errors.New("wrong argument count")$/;"	v
+riMaxCount	entry/redisValidate.go	/^	riMinCount = iota$/;"	c
+riMinCount	entry/redisValidate.go	/^const ($/;"	c
+verifyCommand	entry/redisValidate.go	/^func verifyCommand(cmd *command) error {$/;"	f
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+Close	queue/fakeQ.go	/^func (f *FakeQueue) Close() {$/;"	f
+Confirm	queue/fakeQ.go	/^func (f *FakeQueue) Confirm(key string) error {$/;"	f
+Create	queue/fakeQ.go	/^func (f *FakeQueue) Create(key, recycle string) error {$/;"	f
+Empty	queue/fakeQ.go	/^func (f *FakeQueue) Empty(key string) error {$/;"	f
+FakeQueue	queue/fakeQ.go	/^type FakeQueue struct{}$/;"	t
+MultiConfirm	queue/fakeQ.go	/^func (f *FakeQueue) MultiConfirm(keys []string) []error {$/;"	f
+MultiPop	queue/fakeQ.go	/^func (f *FakeQueue) MultiPop(key string, n int) ([]string, [][]byte, error) {$/;"	f
+MultiPush	queue/fakeQ.go	/^func (f *FakeQueue) MultiPush(key string, datas [][]byte) error {$/;"	f
+NewFakeQueue	queue/fakeQ.go	/^func NewFakeQueue(storage store.Storage, ip string, port int, etcdServers []string, etcdKey string) (*FakeQueue, error) {$/;"	f
+Pop	queue/fakeQ.go	/^func (f *FakeQueue) Pop(key string) (string, []byte, error) {$/;"	f
+Push	queue/fakeQ.go	/^func (f *FakeQueue) Push(key string, data []byte) error {$/;"	f
+Remove	queue/fakeQ.go	/^func (f *FakeQueue) Remove(key string) error {$/;"	f
+Stat	queue/fakeQ.go	/^func (f *FakeQueue) Stat(key string) (*Stat, error) {$/;"	f
+queue	queue/fakeQ.go	/^package queue$/;"	p
+MessageQueue	queue/queue.go	/^type MessageQueue interface {$/;"	t
+queue	queue/queue.go	/^package queue$/;"	p
+etcdRegisterDelay	queue/uEtcd.go	/^	etcdWatchDelay        time.Duration = 3 * time.Second$/;"	c
+etcdRun	queue/uEtcd.go	/^func (u *UnitedQueue) etcdRun() {$/;"	f
+etcdTTL	queue/uEtcd.go	/^	etcdUqServerListValue string        = "online"$/;"	c
+etcdUqServerListValue	queue/uEtcd.go	/^const ($/;"	c
+etcdWatchDelay	queue/uEtcd.go	/^	oneSecond             uint64        = uint64(time.Second)$/;"	c
+nodeCreate	queue/uEtcd.go	/^func (u *UnitedQueue) nodeCreate(node *etcd.Node) error {$/;"	f
+nodeRemove	queue/uEtcd.go	/^func (u *UnitedQueue) nodeRemove(node *etcd.Node) error {$/;"	f
+oneSecond	queue/uEtcd.go	/^	etcdTTL               uint64        = 60$/;"	c
+pullTopics	queue/uEtcd.go	/^func (u *UnitedQueue) pullTopics() error {$/;"	f
+queue	queue/uEtcd.go	/^package queue$/;"	p
+register	queue/uEtcd.go	/^func (u *UnitedQueue) register() error {$/;"	f
+registerLine	queue/uEtcd.go	/^func (u *UnitedQueue) registerLine(topic, line, recycle string) error {$/;"	f
+registerTopic	queue/uEtcd.go	/^func (u *UnitedQueue) registerTopic(topic string) error {$/;"	f
+scanRun	queue/uEtcd.go	/^func (u *UnitedQueue) scanRun() {$/;"	f
+unRegister	queue/uEtcd.go	/^func (u *UnitedQueue) unRegister() error {$/;"	f
+unRegisterLine	queue/uEtcd.go	/^func (u *UnitedQueue) unRegisterLine(topic, line string) error {$/;"	f
+unRegisterTopic	queue/uEtcd.go	/^func (u *UnitedQueue) unRegisterTopic(topic string) error {$/;"	f
+watchRun	queue/uEtcd.go	/^func (u *UnitedQueue) watchRun(succChan, stopChan chan bool) {$/;"	f
+confirm	queue/uLine.go	/^func (l *line) confirm(id uint64) error {$/;"	f
+empty	queue/uLine.go	/^func (l *line) empty() error {$/;"	f
+exportLine	queue/uLine.go	/^func (l *line) exportLine() error {$/;"	f
+exportRecycle	queue/uLine.go	/^func (l *line) exportRecycle() error {$/;"	f
+genLineStore	queue/uLine.go	/^func (l *line) genLineStore() *lineStore {$/;"	f
+init	queue/uLine.go	/^func init() {$/;"	f
+line	queue/uLine.go	/^type line struct {$/;"	t
+lineStore	queue/uLine.go	/^type lineStore struct {$/;"	t
+mPop	queue/uLine.go	/^func (l *line) mPop(n int) ([]uint64, [][]byte, error) {$/;"	f
+pop	queue/uLine.go	/^func (l *line) pop() (uint64, []byte, error) {$/;"	f
+queue	queue/uLine.go	/^package queue$/;"	p
+remove	queue/uLine.go	/^func (l *line) remove() error {$/;"	f
+removeLineData	queue/uLine.go	/^func (l *line) removeLineData() error {$/;"	f
+removeRecycleData	queue/uLine.go	/^func (l *line) removeRecycleData() error {$/;"	f
+stat	queue/uLine.go	/^func (l *line) stat() *Stat {$/;"	f
+updateiHead	queue/uLine.go	/^func (l *line) updateiHead() {$/;"	f
+inflightMessage	queue/uMessage.go	/^type inflightMessage struct {$/;"	t
+message	queue/uMessage.go	/^type message struct {$/;"	t
+queue	queue/uMessage.go	/^package queue$/;"	p
+Close	queue/uQueue.go	/^func (u *UnitedQueue) Close() {$/;"	f
+Confirm	queue/uQueue.go	/^func (u *UnitedQueue) Confirm(key string) error {$/;"	f
+Create	queue/uQueue.go	/^func (u *UnitedQueue) Create(key, rec string) error {$/;"	f
+Empty	queue/uQueue.go	/^func (u *UnitedQueue) Empty(key string) error {$/;"	f
+MultiConfirm	queue/uQueue.go	/^func (u *UnitedQueue) MultiConfirm(keys []string) []error {$/;"	f
+MultiPop	queue/uQueue.go	/^func (u *UnitedQueue) MultiPop(key string, n int) ([]string, [][]byte, error) {$/;"	f
+MultiPush	queue/uQueue.go	/^func (u *UnitedQueue) MultiPush(key string, datas [][]byte) error {$/;"	f
+NewUnitedQueue	queue/uQueue.go	/^func NewUnitedQueue(storage store.Storage, ip string, port int, etcdServers []string, etcdKey string) (*UnitedQueue, error) {$/;"	f
+Pop	queue/uQueue.go	/^func (u *UnitedQueue) Pop(key string) (string, []byte, error) {$/;"	f
+Push	queue/uQueue.go	/^func (u *UnitedQueue) Push(key string, data []byte) error {$/;"	f
+Remove	queue/uQueue.go	/^func (u *UnitedQueue) Remove(key string) error {$/;"	f
+Stat	queue/uQueue.go	/^func (u *UnitedQueue) Stat(key string) (*Stat, error) {$/;"	f
+UnitedQueue	queue/uQueue.go	/^type UnitedQueue struct {$/;"	t
+bgBackupInterval	queue/uQueue.go	/^	storageKeyWord   string        = "UnitedQueueKey"$/;"	c
+bgCleanInterval	queue/uQueue.go	/^	bgBackupInterval time.Duration = 10 * time.Second$/;"	c
+bgCleanTimeout	queue/uQueue.go	/^	bgCleanInterval  time.Duration = 20 * time.Second$/;"	c
+create	queue/uQueue.go	/^func (u *UnitedQueue) create(key, rec string, fromEtcd bool) error {$/;"	f
+createTopic	queue/uQueue.go	/^func (u *UnitedQueue) createTopic(name string, fromEtcd bool) error {$/;"	f
+delData	queue/uQueue.go	/^func (u *UnitedQueue) delData(key string) error {$/;"	f
+exportQueue	queue/uQueue.go	/^func (u *UnitedQueue) exportQueue() error {$/;"	f
+exportTopics	queue/uQueue.go	/^func (u *UnitedQueue) exportTopics() error {$/;"	f
+genQueueStore	queue/uQueue.go	/^func (u *UnitedQueue) genQueueStore() *unitedQueueStore {$/;"	f
+getData	queue/uQueue.go	/^func (u *UnitedQueue) getData(key string) ([]byte, error) {$/;"	f
+init	queue/uQueue.go	/^func init() {$/;"	f
+keyLineHead	queue/uQueue.go	/^	keyLineStore     string        = ":store"$/;"	c
+keyLineInflight	queue/uQueue.go	/^	keyLineRecycle   string        = ":recycle"$/;"	c
+keyLineRecycle	queue/uQueue.go	/^	keyLineHead      string        = ":head"$/;"	c
+keyLineStore	queue/uQueue.go	/^	keyTopicTail     string        = ":tail"$/;"	c
+keyTopicHead	queue/uQueue.go	/^	keyTopicStore    string        = ":store"$/;"	c
+keyTopicStore	queue/uQueue.go	/^	bgCleanTimeout   time.Duration = 5 * time.Second$/;"	c
+keyTopicTail	queue/uQueue.go	/^	keyTopicHead     string        = ":head"$/;"	c
+loadQueue	queue/uQueue.go	/^func (u *UnitedQueue) loadQueue() error {$/;"	f
+loadTopic	queue/uQueue.go	/^func (u *UnitedQueue) loadTopic(topicName string, topicStoreValue topicStore) (*topic, error) {$/;"	f
+newTopic	queue/uQueue.go	/^func (u *UnitedQueue) newTopic(name string) (*topic, error) {$/;"	f
+queue	queue/uQueue.go	/^package queue$/;"	p
+remove	queue/uQueue.go	/^func (u *UnitedQueue) remove(key string, fromEtcd bool) error {$/;"	f
+removeTopic	queue/uQueue.go	/^func (u *UnitedQueue) removeTopic(name string, fromEtcd bool) error {$/;"	f
+setData	queue/uQueue.go	/^func (u *UnitedQueue) setData(key string, data []byte) error {$/;"	f
+storageKeyWord	queue/uQueue.go	/^const ($/;"	c
+unitedQueueStore	queue/uQueue.go	/^type unitedQueueStore struct {$/;"	t
+TestClose	queue/uQueue_test.go	/^func TestClose(t *testing.T) {$/;"	f
+TestConfirm	queue/uQueue_test.go	/^func TestConfirm(t *testing.T) {$/;"	f
+TestCreateLine	queue/uQueue_test.go	/^func TestCreateLine(t *testing.T) {$/;"	f
+TestCreateTopic	queue/uQueue_test.go	/^func TestCreateTopic(t *testing.T) {$/;"	f
+TestEmpty	queue/uQueue_test.go	/^func TestEmpty(t *testing.T) {$/;"	f
+TestLoad	queue/uQueue_test.go	/^func TestLoad(t *testing.T) {$/;"	f
+TestMultiConfirm	queue/uQueue_test.go	/^func TestMultiConfirm(t *testing.T) {$/;"	f
+TestMultiPop	queue/uQueue_test.go	/^func TestMultiPop(t *testing.T) {$/;"	f
+TestMultiPush	queue/uQueue_test.go	/^func TestMultiPush(t *testing.T) {$/;"	f
+TestNewUnitedQueue	queue/uQueue_test.go	/^func TestNewUnitedQueue(t *testing.T) {$/;"	f
+TestPop	queue/uQueue_test.go	/^func TestPop(t *testing.T) {$/;"	f
+TestPush	queue/uQueue_test.go	/^func TestPush(t *testing.T) {$/;"	f
+TestRemove	queue/uQueue_test.go	/^func TestRemove(t *testing.T) {$/;"	f
+TestStat	queue/uQueue_test.go	/^func TestStat(t *testing.T) {$/;"	f
+dbPath	queue/uQueue_test.go	/^const ($/;"	c
+err	queue/uQueue_test.go	/^var ($/;"	v
+ldb	queue/uQueue_test.go	/^	err error$/;"	v
+queue	queue/uQueue_test.go	/^package queue$/;"	p
+uq	queue/uQueue_test.go	/^	ldb store.Storage$/;"	v
+Stat	queue/uStat.go	/^type Stat struct {$/;"	t
+ToJSON	queue/uStat.go	/^func (q *Stat) ToJSON() ([]byte, error) {$/;"	f
+ToMcString	queue/uStat.go	/^func (q *Stat) ToMcString() string {$/;"	f
+ToRedisStrings	queue/uStat.go	/^func (q *Stat) ToRedisStrings() []string {$/;"	f
+ToString	queue/uStat.go	/^func (q *Stat) ToString() string {$/;"	f
+ToStrings	queue/uStat.go	/^func (q *Stat) ToStrings() []string {$/;"	f
+queue	queue/uStat.go	/^package queue$/;"	p
+backgroundClean	queue/uTopic.go	/^func (t *topic) backgroundClean() {$/;"	f
+clean	queue/uTopic.go	/^func (t *topic) clean() (quit bool) {$/;"	f
+close	queue/uTopic.go	/^func (t *topic) close() {$/;"	f
+confirm	queue/uTopic.go	/^func (t *topic) confirm(name string, id uint64) error {$/;"	f
+createLine	queue/uTopic.go	/^func (t *topic) createLine(name string, recycle time.Duration, fromEtcd bool) error {$/;"	f
+empty	queue/uTopic.go	/^func (t *topic) empty() error {$/;"	f
+emptyLine	queue/uTopic.go	/^func (t *topic) emptyLine(name string) error {$/;"	f
+exportHead	queue/uTopic.go	/^func (t *topic) exportHead() error {$/;"	f
+exportLines	queue/uTopic.go	/^func (t *topic) exportLines() error {$/;"	f
+exportTail	queue/uTopic.go	/^func (t *topic) exportTail() error {$/;"	f
+exportTopic	queue/uTopic.go	/^func (t *topic) exportTopic() error {$/;"	f
+genTopicStore	queue/uTopic.go	/^func (t *topic) genTopicStore() *topicStore {$/;"	f
+getData	queue/uTopic.go	/^func (t *topic) getData(id uint64) ([]byte, error) {$/;"	f
+getEnd	queue/uTopic.go	/^func (t *topic) getEnd() uint64 {$/;"	f
+getHead	queue/uTopic.go	/^func (t *topic) getHead() uint64 {$/;"	f
+getTail	queue/uTopic.go	/^func (t *topic) getTail() uint64 {$/;"	f
+init	queue/uTopic.go	/^func init() {$/;"	f
+loadLine	queue/uTopic.go	/^func (t *topic) loadLine(lineName string, lineStoreValue lineStore) (*line, error) {$/;"	f
+mPop	queue/uTopic.go	/^func (t *topic) mPop(name string, n int) ([]uint64, [][]byte, error) {$/;"	f
+mPush	queue/uTopic.go	/^func (t *topic) mPush(datas [][]byte) error {$/;"	f
+newLine	queue/uTopic.go	/^func (t *topic) newLine(name string, recycle time.Duration) (*line, error) {$/;"	f
+pop	queue/uTopic.go	/^func (t *topic) pop(name string) (uint64, []byte, error) {$/;"	f
+push	queue/uTopic.go	/^func (t *topic) push(data []byte) error {$/;"	f
+queue	queue/uTopic.go	/^package queue$/;"	p
+remove	queue/uTopic.go	/^func (t *topic) remove() error {$/;"	f
+removeHeadData	queue/uTopic.go	/^func (t *topic) removeHeadData() error {$/;"	f
+removeLine	queue/uTopic.go	/^func (t *topic) removeLine(name string, fromEtcd bool) error {$/;"	f
+removeLines	queue/uTopic.go	/^func (t *topic) removeLines() error {$/;"	f
+removeMsgData	queue/uTopic.go	/^func (t *topic) removeMsgData() error {$/;"	f
+removeTailData	queue/uTopic.go	/^func (t *topic) removeTailData() error {$/;"	f
+removeTopicData	queue/uTopic.go	/^func (t *topic) removeTopicData() error {$/;"	f
+setData	queue/uTopic.go	/^func (t *topic) setData(id uint64, data []byte) error {$/;"	f
+start	queue/uTopic.go	/^func (t *topic) start() {$/;"	f
+stat	queue/uTopic.go	/^func (t *topic) stat() *Stat {$/;"	f
+statLine	queue/uTopic.go	/^func (t *topic) statLine(name string) (*Stat, error) {$/;"	f
+topic	queue/uTopic.go	/^type topic struct {$/;"	t
+topicStore	queue/uTopic.go	/^type topicStore struct {$/;"	t
+Close	store/goleveldbStore.go	/^func (l *LevelStore) Close() error {$/;"	f
+Del	store/goleveldbStore.go	/^func (l *LevelStore) Del(key string) error {$/;"	f
+Get	store/goleveldbStore.go	/^func (l *LevelStore) Get(key string) ([]byte, error) {$/;"	f
+LevelStore	store/goleveldbStore.go	/^type LevelStore struct {$/;"	t
+NewLevelStore	store/goleveldbStore.go	/^func NewLevelStore(path string) (*LevelStore, error) {$/;"	f
+Set	store/goleveldbStore.go	/^func (l *LevelStore) Set(key string, data []byte) error {$/;"	f
+store	store/goleveldbStore.go	/^package store$/;"	p
+TestCloseLevel	store/goleveldbStore_test.go	/^func TestCloseLevel(t *testing.T) {$/;"	f
+TestDelLevel	store/goleveldbStore_test.go	/^func TestDelLevel(t *testing.T) {$/;"	f
+TestGetLevel	store/goleveldbStore_test.go	/^func TestGetLevel(t *testing.T) {$/;"	f
+TestNewLevelStore	store/goleveldbStore_test.go	/^func TestNewLevelStore(t *testing.T) {$/;"	f
+TestSetLevel	store/goleveldbStore_test.go	/^func TestSetLevel(t *testing.T) {$/;"	f
+dbPath	store/goleveldbStore_test.go	/^	ldb    Storage$/;"	v
+init	store/goleveldbStore_test.go	/^func init() {$/;"	f
+ldb	store/goleveldbStore_test.go	/^var ($/;"	v
+store	store/goleveldbStore_test.go	/^package store$/;"	p
+Close	store/memStore.go	/^func (m *MemStore) Close() error {$/;"	f
+Del	store/memStore.go	/^func (m *MemStore) Del(key string) error {$/;"	f
+Get	store/memStore.go	/^func (m *MemStore) Get(key string) ([]byte, error) {$/;"	f
+MemStore	store/memStore.go	/^type MemStore struct {$/;"	t
+NewMemStore	store/memStore.go	/^func NewMemStore() (*MemStore, error) {$/;"	f
+Set	store/memStore.go	/^func (m *MemStore) Set(key string, data []byte) error {$/;"	f
+store	store/memStore.go	/^package store$/;"	p
+TestCloseMem	store/memStore_test.go	/^func TestCloseMem(t *testing.T) {$/;"	f
+TestDelMem	store/memStore_test.go	/^func TestDelMem(t *testing.T) {$/;"	f
+TestGetMem	store/memStore_test.go	/^func TestGetMem(t *testing.T) {$/;"	f
+TestNewMemStore	store/memStore_test.go	/^func TestNewMemStore(t *testing.T) {$/;"	f
+TestSetMem	store/memStore_test.go	/^func TestSetMem(t *testing.T) {$/;"	f
+err	store/memStore_test.go	/^	mdb Storage$/;"	v
+mdb	store/memStore_test.go	/^var ($/;"	v
+store	store/memStore_test.go	/^package store$/;"	p
+store	store/rocksdbStore.go	/^package store$/;"	p
+Storage	store/storage.go	/^type Storage interface {$/;"	t
+errModeNotMatched	store/storage.go	/^	errNotExisted     string = "Data Not Existed"$/;"	c
+errNotExisted	store/storage.go	/^const ($/;"	c
+store	store/storage.go	/^package store$/;"	p
+deadline	test/bench_reader.go	/^	size      = flag.Int("size", 200, "size of messages")$/;"	v
+main	test/bench_reader.go	/^func main() {$/;"	f
+main	test/bench_reader.go	/^package main$/;"	p
+runfor	test/bench_reader.go	/^var ($/;"	v
+size	test/bench_reader.go	/^	topic     = flag.String("topic", "foo", "topic to receive messages on")$/;"	v
+storePath	test/bench_reader.go	/^	deadline  = flag.String("deadline", "", "deadline to start the benchmark run")$/;"	v
+subWorker	test/bench_reader.go	/^func subWorker(mq queue.MessageQueue, td time.Duration, line string, rdyChan chan int, goChan chan int) {$/;"	f
+topic	test/bench_reader.go	/^	runfor    = flag.Duration("runfor", 10*time.Second, "duration of time to run")$/;"	v
+totalMsgCount	test/bench_reader.go	/^var totalMsgCount int64$/;"	v
+deadline	test/bench_writer.go	/^	size      = flag.Int("size", 200, "size of messages")$/;"	v
+main	test/bench_writer.go	/^func main() {$/;"	f
+main	test/bench_writer.go	/^package main$/;"	p
+pubWorker	test/bench_writer.go	/^func pubWorker(mq queue.MessageQueue, td time.Duration, data []byte, topic string, rdyChan chan int, goChan chan int) {$/;"	f
+runfor	test/bench_writer.go	/^var ($/;"	v
+size	test/bench_writer.go	/^	topic     = flag.String("topic", "foo", "topic to receive messages on")$/;"	v
+storePath	test/bench_writer.go	/^	deadline  = flag.String("deadline", "", "deadline to start the benchmark run")$/;"	v
+topic	test/bench_writer.go	/^	runfor    = flag.Duration("runfor", 10*time.Second, "duration of time to run")$/;"	v
+totalMsgCount	test/bench_writer.go	/^var totalMsgCount int64$/;"	v
+decode	test/genHttpJsonReq.go	/^func decode(data []byte) error {$/;"	f
+encode	test/genHttpJsonReq.go	/^func encode(qr *entry.HttpQueueRequest) ([]byte, error) {$/;"	f
+main	test/genHttpJsonReq.go	/^func main() {$/;"	f
+main	test/genHttpJsonReq.go	/^package main$/;"	p
+bucket	test/mc_bench.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+concurrency	test/mc_bench.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+dataSize	test/mc_bench.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+getTest	test/mc_bench.go	/^func getTest(c, n int) {$/;"	f
+getTestSingle	test/mc_bench.go	/^func getTestSingle(ch chan bool, cn, n int) {$/;"	f
+host	test/mc_bench.go	/^var host, method, topicName, lineName string$/;"	v
+init	test/mc_bench.go	/^func init() {$/;"	f
+initQueue	test/mc_bench.go	/^func initQueue() {$/;"	f
+lineName	test/mc_bench.go	/^var host, method, topicName, lineName string$/;"	v
+main	test/mc_bench.go	/^func main() {$/;"	f
+main	test/mc_bench.go	/^package main$/;"	p
+method	test/mc_bench.go	/^var host, method, topicName, lineName string$/;"	v
+port	test/mc_bench.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+setTest	test/mc_bench.go	/^func setTest(c, n int) {$/;"	f
+setTestSingle	test/mc_bench.go	/^func setTestSingle(ch chan bool, cn, n int) {$/;"	f
+testCount	test/mc_bench.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+topicName	test/mc_bench.go	/^var host, method, topicName, lineName string$/;"	v
+bucket	test/mc_bench_sc.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+concurrency	test/mc_bench_sc.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+dataSize	test/mc_bench_sc.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+getTest	test/mc_bench_sc.go	/^func getTest(c, n int) {$/;"	f
+getTestSingle	test/mc_bench_sc.go	/^func getTestSingle(ch chan bool, cn, n int) {$/;"	f
+host	test/mc_bench_sc.go	/^var host, method, topicName, lineName string$/;"	v
+init	test/mc_bench_sc.go	/^func init() {$/;"	f
+initQueue	test/mc_bench_sc.go	/^func initQueue() {$/;"	f
+lineName	test/mc_bench_sc.go	/^var host, method, topicName, lineName string$/;"	v
+main	test/mc_bench_sc.go	/^func main() {$/;"	f
+main	test/mc_bench_sc.go	/^package main$/;"	p
+method	test/mc_bench_sc.go	/^var host, method, topicName, lineName string$/;"	v
+port	test/mc_bench_sc.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+setTest	test/mc_bench_sc.go	/^func setTest(c, n int) {$/;"	f
+setTestSingle	test/mc_bench_sc.go	/^func setTestSingle(ch chan bool, mc *memcache.Client, cn, n int) {$/;"	f
+testCount	test/mc_bench_sc.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+topicName	test/mc_bench_sc.go	/^var host, method, topicName, lineName string$/;"	v
+bucket	test/redis_bench.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+concurrency	test/redis_bench.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+dataSize	test/redis_bench.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+getTest	test/redis_bench.go	/^func getTest(c, n int) {$/;"	f
+getTestSingle	test/redis_bench.go	/^func getTestSingle(ch chan bool, cn, n int) error {$/;"	f
+host	test/redis_bench.go	/^var host, method, topicName, lineName string$/;"	v
+init	test/redis_bench.go	/^func init() {$/;"	f
+initQueue	test/redis_bench.go	/^func initQueue() error {$/;"	f
+lineName	test/redis_bench.go	/^var host, method, topicName, lineName string$/;"	v
+main	test/redis_bench.go	/^func main() {$/;"	f
+main	test/redis_bench.go	/^package main$/;"	p
+method	test/redis_bench.go	/^var host, method, topicName, lineName string$/;"	v
+msetTest	test/redis_bench.go	/^func msetTest(c, n int) {$/;"	f
+msetTestSingle	test/redis_bench.go	/^func msetTestSingle(ch chan bool, cn, n int) error {$/;"	f
+port	test/redis_bench.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+setTest	test/redis_bench.go	/^func setTest(c, n int) {$/;"	f
+setTestSingle	test/redis_bench.go	/^func setTestSingle(ch chan bool, cn, n int) error {$/;"	f
+testCount	test/redis_bench.go	/^var port, testCount, concurrency, dataSize, bucket int$/;"	v
+topicName	test/redis_bench.go	/^var host, method, topicName, lineName string$/;"	v
+Acatui	test/testAcati.go	/^func Acatui(str, b string, n uint64) string {$/;"	f
+Fmt	test/testAcati.go	/^func Fmt(str, b string, n uint64) string {$/;"	f
+main	test/testAcati.go	/^func main() {$/;"	f
+main	test/testAcati.go	/^package main$/;"	p
+adminPort	uq.go	/^	port      int$/;"	v
+belong	uq.go	/^func belong(single string, team []string) bool {$/;"	f
+checkArgs	uq.go	/^func checkArgs() bool {$/;"	f
+cluster	uq.go	/^	etcd      string$/;"	v
+db	uq.go	/^	protocol  string$/;"	v
+dir	uq.go	/^	db        string$/;"	v
+etcd	uq.go	/^	logFile   string$/;"	v
+host	uq.go	/^	ip        string$/;"	v
+init	uq.go	/^func init() {$/;"	f
+ip	uq.go	/^var ($/;"	v
+logFile	uq.go	/^	dir       string$/;"	v
+main	uq.go	/^func main() {$/;"	f
+main	uq.go	/^package main$/;"	p
+port	uq.go	/^	host      string$/;"	v
+protocol	uq.go	/^	adminPort int$/;"	v
+TestArgs	uq_test.go	/^func TestArgs(t *testing.T) {$/;"	f
+main	uq_test.go	/^package main$/;"	p
+ErrBadKey	utils/error.go	/^	ErrNotDelivered = 103$/;"	c
+ErrBadRequest	utils/error.go	/^	ErrLineExisted = 106$/;"	c
+ErrInternalError	utils/error.go	/^	ErrBadRequest = 400$/;"	c
+ErrLineExisted	utils/error.go	/^	ErrTopicExisted = 105$/;"	c
+ErrLineNotExisted	utils/error.go	/^	ErrTopicNotExisted = 101$/;"	c
+ErrNone	utils/error.go	/^const ($/;"	c
+ErrNotDelivered	utils/error.go	/^	ErrLineNotExisted = 102$/;"	c
+ErrTopicExisted	utils/error.go	/^	ErrBadKey = 104$/;"	c
+ErrTopicNotExisted	utils/error.go	/^	ErrNone = 100$/;"	c
+Error	utils/error.go	/^func (e Error) Error() string {$/;"	f
+Error	utils/error.go	/^type Error struct {$/;"	t
+NewError	utils/error.go	/^func NewError(errorCode int, cause string) *Error {$/;"	f
+WriteTo	utils/error.go	/^func (e Error) WriteTo(w http.ResponseWriter) {$/;"	f
+errorMap	utils/error.go	/^var errorMap = map[int]string{$/;"	v
+errorStatus	utils/error.go	/^var errorStatus = map[int]int{$/;"	v
+statusCode	utils/error.go	/^func (e Error) statusCode() int {$/;"	f
+toJSONString	utils/error.go	/^func (e Error) toJSONString() string {$/;"	f
+utils	utils/error.go	/^package utils$/;"	p
+TestError	utils/error_test.go	/^func TestError(t *testing.T) {$/;"	f
+utils	utils/error_test.go	/^package utils$/;"	p
+AllowMethod	utils/httpUtils.go	/^func AllowMethod(w http.ResponseWriter, m string, ms ...string) bool {$/;"	f
+utils	utils/httpUtils.go	/^package utils$/;"	p
+NewLimitedBufferReader	utils/limitedBufReader.go	/^func NewLimitedBufferReader(r io.Reader, n int) io.Reader {$/;"	f
+Read	utils/limitedBufReader.go	/^func (r *limitedBufferReader) Read(p []byte) (n int, err error) {$/;"	f
+limitedBufferReader	utils/limitedBufReader.go	/^type limitedBufferReader struct {$/;"	t
+utils	utils/limitedBufReader.go	/^package utils$/;"	p
+TestLimitedBufferReaderRead	utils/limitedBufReader_test.go	/^func TestLimitedBufferReaderRead(t *testing.T) {$/;"	f
+utils	utils/limitedBufReader_test.go	/^package utils$/;"	p
+Accept	utils/stopListener.go	/^func (sl *StopListener) Accept() (net.Conn, error) {$/;"	f
+NewStopListener	utils/stopListener.go	/^func NewStopListener(l net.Listener) (*StopListener, error) {$/;"	f
+Stop	utils/stopListener.go	/^func (sl *StopListener) Stop() {$/;"	f
+StopListener	utils/stopListener.go	/^type StopListener struct {$/;"	t
+errStopped	utils/stopListener.go	/^var errStopped = errors.New("Listener stopped")$/;"	v
+utils	utils/stopListener.go	/^package utils$/;"	p
+Acati	utils/strings.go	/^func Acati(str, b string, n int) string {$/;"	f
+Acatui	utils/strings.go	/^func Acatui(str, b string, n uint64) string {$/;"	f
+Addrcat	utils/strings.go	/^func Addrcat(host string, port int) string {$/;"	f
+Atoi	utils/strings.go	/^func Atoi(str string) uint64 {$/;"	f
+ItoaQuick	utils/strings.go	/^func ItoaQuick(i int) string {$/;"	f
+init	utils/strings.go	/^func init() {$/;"	f
+itoaCount	utils/strings.go	/^const ($/;"	c
+itoaNums	utils/strings.go	/^var itoaNums []string$/;"	v
+utils	utils/strings.go	/^package utils$/;"	p
+TestAcati	utils/strings_test.go	/^func TestAcati(t *testing.T) {$/;"	f
+TestAcatui	utils/strings_test.go	/^func TestAcatui(t *testing.T) {$/;"	f
+TestAddrcat	utils/strings_test.go	/^func TestAddrcat(t *testing.T) {$/;"	f
+TestAtoi	utils/strings_test.go	/^func TestAtoi(t *testing.T) {$/;"	f
+TestItoaQuick	utils/strings_test.go	/^func TestItoaQuick(t *testing.T) {$/;"	f
+utils	utils/strings_test.go	/^package utils$/;"	p
