@@ -67,12 +67,16 @@ func NewUnitedQueue(storage store.Storage, ip string, port int, etcdServers []st
 		uq.etcdClient = etcdClient
 		uq.etcdKey = etcdKey
 	}
-
+	/**
+	loadQueue负责从storage中recover消息topic,lines
+	*/
 	err := uq.loadQueue()
 	if err != nil {
 		return nil, err
 	}
-
+	/**
+	etcdRun负责将etcd server中的topic和lines都pull下来,同时，watch etcd中uq的数据变更
+	*/
 	go uq.etcdRun()
 	return uq, nil
 }
@@ -225,6 +229,9 @@ func (u *UnitedQueue) loadTopic(topicName string, topicStoreValue topicStore) (*
 	return t, nil
 }
 
+/**
+启动的时候，加载storage中的消息,如果使用的存储引擎为memdb，那么mem中的数据应该为空
+*/
 func (u *UnitedQueue) loadQueue() error {
 	unitedQueueStoreData, err := u.getData(storageKeyWord)
 	if err != nil {
@@ -232,6 +239,9 @@ func (u *UnitedQueue) loadQueue() error {
 		return nil
 	}
 
+	/**
+	启动的时候，针对持久化存储，将数据load到内存中，内存是否能够完全hold住
+	*/
 	if len(unitedQueueStoreData) > 0 {
 		var unitedQueueStoreValue unitedQueueStore
 		dec := gob.NewDecoder(bytes.NewBuffer(unitedQueueStoreData))

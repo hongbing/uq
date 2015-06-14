@@ -15,6 +15,15 @@ func init() {
 	gob.Register(&lineStore{})
 }
 
+/**
+head和ihead表示line对应topic里面消息的偏移量
+当取出一条消息，head加1,直到取出所有的消息，head等于count为止
+只有当确认一条消息后，ihead才加1,取消息必须顺序取，但是对于消息的确认，
+只要是pop过的消息，都可以确认.确认消息可以乱序。当消息被确认后，消息就从line中逻辑删掉了,
+未被确认的消息，在recycle时间到后，将会重新放到line头部。
+当topic下面的所有line的某个消息都被确认后，topic中的这个消息才会被物理删除
+
+*/
 type line struct {
 	name         string
 	head         uint64
@@ -121,6 +130,7 @@ func (l *line) pop() (uint64, []byte, error) {
 	defer l.inflightLock.Unlock()
 
 	now := time.Now()
+	//回收消息
 	if l.recycle > 0 {
 
 		m := l.inflight.Front()
